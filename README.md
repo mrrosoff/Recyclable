@@ -5,6 +5,7 @@
 ### HackCU VI: Max Rosoff, David Hallstrom, Ben Gillett
 
 <img src="recyclable.png" width="100">
+
 [our live deploy](https://recyclable.tech)
 
 
