@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import Navigation from "./Navigation";
 import DetailsPage from './pages/DetailsPage';
+import NoInfoPage from "./pages/NoInfoPage";
 import CameraComponent from "./CameraComponent";
 
 import makeStyles from "@material-ui/core/styles/makeStyles";
@@ -21,16 +22,25 @@ const Layout = props => {
         setObjectDetails(response);
     };
 
+    let pageToDisplay = page ? (picUri ?
+        <DetailsPage dataUri={picUri} objectDetails={objectDetails} />
+        :
+        <NoInfoPage />)
+        :
+        <CameraComponent
+            setPicUri={setPicUri}
+            setPage={setPage}
+            retrieveClassificationResponse={retrieveClassificationResponse}
+            setObjectDetails={setObjectDetails}
+        />;
+
     return (
         <>
             <Container>
                 <Box className={classes.page}>
                     <Grid container justify={"center"} alignContent={"center"} alignItems={"center"} direction={"column"}>
                         <Grid item>
-                            {page ?
-                                <DetailsPage dataUri={picUri} objectDetails={objectDetails} />
-                                :
-                                <CameraComponent setPicUri={setPicUri} setPage={setPage} retrieveClassificationResponse={retrieveClassificationResponse} setObjectDetails={setObjectDetails}/>}
+                            {pageToDisplay}
                         </Grid>
                     </Grid>
                 </Box>

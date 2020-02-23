@@ -19,7 +19,7 @@ const WebcamSection = props => {
                     <Webcam
                         audio={false}
                         ref={props.webcamRef}
-                        height={Math.floor(height * 0.7)}
+                        height={Math.floor(height * 0.76)}
                         screenshotFormat="image/jpeg"
                         videoConstraints={videoConstraints}
                     />
@@ -100,9 +100,7 @@ const CameraPage = props => {
         const imageSrc = webcamRef.current.getScreenshot();
         setObjectDetails({name: '', recyclable: null});
         resizeImage(imageSrc, 1024, uri => {
-            // console.log('resized:', uri);
             sendServerRequestWithBody("getProductType", {"dataUri": uri}).then(r => {
-                console.log(r.body.data);
                 retrieveClassificationResponse(r.body.data);
             });
         });
