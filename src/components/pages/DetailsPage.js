@@ -1,9 +1,9 @@
 import React from "react";
 
-import CircularProgress from '@material-ui/core/CircularProgress';
+import { CircularProgress, Grid, Typography } from '@material-ui/core';
 
 const DetailsPage = (props) => {
-    const {objectDetails: {name, recyclable}} = props;
+    let {objectDetails: {name, recyclable}} = props;
 
     let message = "Not sure if it's recyclable";
     let color = "auto";
@@ -12,26 +12,30 @@ const DetailsPage = (props) => {
         color = recyclable ? "green" : "red";
     }
 
-    
-    return <>
-        <div style={{marginLeft: "auto", marginRight: "auto", width: 'fit-content', paddingTop: "5vh", marginBottom: "6px"}}>
-            <img src={props.dataUri} style={{borderRadius: "50%", width:"40vh", height:"40vh", objectFit: "cover"}}/>
-        </div>
-        {name || recyclable ? (
-        <>
-            <div style={{marginLeft: "auto", marginRight: "auto", width: 'fit-content', marginTop: "6px", marginBottom: "6px"}}>
-                <h3>{name}</h3>
-            </div>
-            <div style={{marginLeft: "auto", marginRight: "auto", width: 'fit-content', marginTop: "6px", marginBottom: "6px"}}>
-                <h4 style={{color: color}}>{message}</h4>
-            </div>
-        </>
-        ) : (
-            <div style={{marginLeft: "auto", marginRight: "auto", width: 'fit-content', marginTop: "auto", marginBottom: "auto"}}>
-            <CircularProgress />
-        </div>
-        )}
-        </>;
+    name = name.charAt(0).toUpperCase() + name.slice(1);
+
+    return(
+        <Grid container justify={"center"} alignItems={"center"} alignContent={"center"} direction={"column"} spacing={3}>
+            <Grid item>
+                <img src={props.dataUri} style={{border: "5px solid " + color, borderRadius: "50%", width:"45vh", height:"45vh", objectFit: "cover"}}/>
+            </Grid>
+            {name || recyclable ?
+                <>
+                    <Grid item>
+                        <Typography variant={"h3"}>{name}</Typography>
+                    </Grid>
+                    <Grid item>
+                        <Typography variant={"h4"} style={{color: color}}>{message}</Typography>
+                    </Grid>
+                </>
+                :
+                <Grid item>
+                    <CircularProgress />
+                </Grid>
+            }
+        </Grid>
+    )
+        ;
 }
 
 export default DetailsPage;

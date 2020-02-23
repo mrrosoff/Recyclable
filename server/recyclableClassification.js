@@ -1,16 +1,16 @@
 const recycle_data = [
-    {displayName: 'cheezeit', actualName: 'Cheez-It wrapper', recyclable: false},
-    {displayName: 'goldfish', actualName: 'Goldfish wrapper', recyclable: false},
-    {displayName: 'lays', actualName: 'Lays wrapper', recyclable: false},
-    {displayName: 'coke', actualName: 'Coca-Cola can', recyclable: true},
-    {displayName: 'dietcoke', actualName: 'Diet Coca-Cola can', recyclable: true},
-    {displayName: 'sprite', actualName: 'Sprite can', recyclable: true},
-    {displayName: 'arizonatea', actualName: 'Arizona Tea can', recyclable: true},
-    {displayName: 'drpepper', actualName: 'Dr Pepper can', recyclable: true},
-    {displayName: 'gatorade', actualName: 'Gatorade can', recyclable: true},
-    {displayName: 'redbull', actualName: 'Red Bull can', recyclable: true},
-    {displayName: 'welch', actualName: 'Welch\'s wrapper', recyclable: false},
-    {displayName: 'mnms', actualName: 'M&M\'s wrapper', recyclable: false}
+    {displayName: 'cheezeit', actualName: 'Cheez-It Wrapper', recyclable: false},
+    {displayName: 'goldfish', actualName: 'Goldfish Wrapper', recyclable: false},
+    {displayName: 'lays', actualName: 'Lays Wrapper', recyclable: false},
+    {displayName: 'coke', actualName: 'Coca-Cola Can', recyclable: true},
+    {displayName: 'dietcoke', actualName: 'Diet Coca-Cola Can', recyclable: true},
+    {displayName: 'sprite', actualName: 'Sprite Can', recyclable: true},
+    {displayName: 'arizonatea', actualName: 'Arizona Ice Tea Can', recyclable: true},
+    {displayName: 'drpepper', actualName: 'Dr. Pepper Can', recyclable: true},
+    {displayName: 'gatorade', actualName: 'Gatorade Bottle', recyclable: true},
+    {displayName: 'redbull', actualName: 'Red Bull Can', recyclable: true},
+    {displayName: 'welch', actualName: 'Welch\'s Wrapper', recyclable: false},
+    {displayName: 'mnms', actualName: 'M&M\'s Wrapper', recyclable: false}
 ];
 
 const classifyProduct = r => {
