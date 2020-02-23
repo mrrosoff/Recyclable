@@ -1,5 +1,6 @@
 const resizeImage = (uri, maxDim, callback) => {
-    var reader = new FileReader();
+    callback(uri);
+    /*var reader = new FileReader();
     reader.readAsDataURL(new Blob([uri]));
     reader.onloadend = function (e) {
         const contents = e.target.result;
@@ -28,7 +29,7 @@ const resizeImage = (uri, maxDim, callback) => {
         }
 
         sourceImage.src = uri;
-    }
+    }*/
 };
 
 export default resizeImage;
