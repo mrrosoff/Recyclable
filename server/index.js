@@ -15,6 +15,8 @@ const credentials = {
 	ca: ca
 };
 
+require('./routes')(app);
+
 const httpServer = http.createServer(app);
 const httpsServer = https.createServer(credentials, app);
 
@@ -29,11 +31,6 @@ app.use((req, res, next) => {
 
 app.use(express.static('dist'));
 
-httpServer.listen(8080, () => {
-	console.log('HTTP Server running on port 8080');
-});
-
-httpsServer.listen(8443, () => {
-	console.log('HTTPS Server running on port 8443');
-});
+httpServer.listen(8080, () => console.log('HTTP Server Running on Port 8080'));
+httpsServer.listen(8443, () => console.log('HTTPS Server Running on Port 8443'));
 
