@@ -17,23 +17,23 @@ const credentials = {
 	ca: ca
 };
 
-app.use((req, res) => {
-	res.send('Yay Recyclable!');
-});
-
 // Starting both http & https servers
 const httpServer = http.createServer(app);
 const httpsServer = https.createServer(credentials, app);
 
 // set up a route to redirect http to https
-// app.use('*', function(req, res) {
-// 	res.redirect('https://' + req.headers.host + req.url);
-// });
+httpServer.use(function(req, res) {
+	res.redirect('https://' + req.headers.host + req.url);
+});
 
-// httpServer.listen(8080, () => {
-// 	console.log('HTTP Server running on port 8080');
-// });
+httpServer.listen(8080, () => {
+	console.log('HTTP Server running on port 8080');
+});
 
 httpsServer.listen(8443, () => {
 	console.log('HTTPS Server running on port 8443');
+});
+
+app.use((req, res) => {
+	res.send('Yay Recyclable!');
 });
