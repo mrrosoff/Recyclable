@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="47c35639-2546-4dd6-9ccd-0a908333eb8a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582437491965</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="bug">
+      <created>1582437707853</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1582437707853</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +269,8 @@
     <MESSAGE value="redirect" />
     <MESSAGE value="test" />
     <MESSAGE value="added localhost non secure mode" />
-    <option name="LAST_COMMIT_MESSAGE" value="added localhost non secure mode" />
+    <MESSAGE value="bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug" />
   </component>
   <component name="WindowStateProjectService">
     <state x="212" y="150" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582432550936">
@@ -274,10 +281,10 @@
       <screen x="0" y="30" width="1500" height="915" />
     </state>
     <state x="486" y="240" width="524" height="506" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.30.1500.915@0.30.1500.915" timestamp="1582428209029" />
-    <state x="314" y="23" width="778" height="777" key="CommitChangelistDialog2" timestamp="1582437491667">
+    <state x="314" y="23" width="778" height="777" key="CommitChangelistDialog2" timestamp="1582437707675">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="314" y="23" width="778" height="777" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1582437491667" />
+    <state x="314" y="23" width="778" height="777" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1582437707675" />
     <state x="368" y="80" width="759" height="810" key="CommitChangelistDialog2/0.30.1500.915@0.30.1500.915" timestamp="1582432564860" />
     <state x="493" y="393" width="385" height="199" key="Github.ShareDialog" timestamp="1582428975825">
       <screen x="0" y="30" width="1500" height="915" />
@@ -307,10 +314,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="356" y="134" key="MultipleFileMergeDialog/0.23.1280.777@0.23.1280.777" timestamp="1582437367396" />
-    <state x="297" y="175" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1582437493488">
+    <state x="297" y="175" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1582437708994">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="297" y="175" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1582437493488" />
+    <state x="297" y="175" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1582437708994" />
     <state x="348" y="209" width="800" height="556" key="Vcs.Push.Dialog.v2/0.30.1500.915@0.30.1500.915" timestamp="1582432566359" />
     <state x="475" y="346" width="390" height="152" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582437331474">
       <screen x="0" y="23" width="1280" height="777" />
