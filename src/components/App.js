@@ -35,7 +35,7 @@ const App = () => {
     return(
         <ThemeProvider theme={theme}>
             <SnackbarProvider maxSnack={3} preventDuplicate>
-                <LoadApp/>
+                <LoadApp />
             </SnackbarProvider>
         </ThemeProvider>
     );

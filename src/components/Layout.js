@@ -1,6 +1,6 @@
 import React, { useState } from "react";
+import Webcam from "react-webcam";
 
-import CameraComponent from "./CameraComponent";
 import Navigation from "./Navigation";
 
 import Container from '@material-ui/core/Container';
@@ -8,24 +8,46 @@ import DetailsPage from './pages/DetailsPage';
 
 import { sendServerRequestWithBody } from "../api/restfulAPI";
 
+const videoConstraints = {
+    facingMode: "user"
+};
+
+const CameraPage = () => {
+    const webcamRef = React.useRef(null);
+
+    const capture = React.useCallback(() => {
+            const imageSrc = webcamRef.current.getScreenshot();
+        },
+        [webcamRef]
+    );
+
+    return (
+        <>
+            <Webcam
+                audio={false}
+                ref={webcamRef}
+                screenshotFormat="image/jpeg"
+                videoConstraints={videoConstraints}
+            />
+            <button onClick={capture}>Capture photo</button>
+        </>
+    );
+};
+/*
 const CameraPage = (props) => {
     const {setPicUri, setPage} = props;
 
     const handleTakePhoto = (dataUri) => {
         console.log(dataUri);
         setPicUri(dataUri);
-        new Promise(() => {sendServerRequestWithBody("getProductType", {"dataUri": dataUri})}).then(response => {
-            console.log("response");
-        });
-    }
+        sendServerRequestWithBody("getProductType", {"dataUri": dataUri}).then(r => console.log(r));
+    };
     const handleTakePhotoAnimationDone = (dataUri) => {
         setPage(1);
-    }
+    };
 
     return <CameraComponent handleTakePhoto={handleTakePhoto} handleTakePhotoAnimationDone={handleTakePhotoAnimationDone} />;
-}
-
-
+};*/
 
 const Layout = props => {
 
@@ -34,15 +56,8 @@ const Layout = props => {
 
     return(
         <Container>
-            <div style={{minHeight: "90vh"}}>
-                    {page ?
-                        <DetailsPage dataUri={picUri}/>
-                        : <CameraPage setPicUri={setPicUri} setPage={setPage} />
-                    }
-            </div>
-            <div style={{minHeight: "10vh"}}>
-                <Navigation page={page} setPage={setPage} />
-            </div>
+            { page ? <DetailsPage dataUri={picUri}/> : <CameraPage setPicUri={setPicUri} setPage={setPage} /> }
+            <Navigation page={page} setPage={setPage} />
         </Container>
     );
 };
