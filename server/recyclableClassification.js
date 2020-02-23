@@ -20,8 +20,8 @@ const classifyProduct = r => {
         name = r[0].displayName;
         entry = recycle_data.filter(a => a.displayName === name);
         if (entry.length === 1) {
-            name = entry.actualName;
-            recyclable = entry.recyclable;
+            name = entry[0].actualName;
+            recyclable = entry[0].recyclable;
         }
     }
     return {name: name, recyclable: recyclable, original: r};
