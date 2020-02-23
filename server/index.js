@@ -23,7 +23,7 @@ app.use((req, res) => {
 	if (!req.secure) {
 		res.redirect('https://' + req.headers.host + req.url);
 	}
-	res.send(express.static('dist'));
+	return express.static('dist');
 });
 
 httpServer.listen(8080, () => {
