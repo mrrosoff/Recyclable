@@ -12,10 +12,10 @@ const WebcamSection = props => {
 
     const videoConstraints = { facingMode: "environment" };
     const { height, width } = useWindowDimensions();
-    if (width >= 960) {
-        return(
-            <Paper>
-                <Card>
+    return (
+        <Paper>
+            <Card>
+                <div style={{ position: "relative" }}>
                     <Webcam
                         audio={false}
                         ref={props.webcamRef}
@@ -23,39 +23,23 @@ const WebcamSection = props => {
                         screenshotFormat="image/jpeg"
                         videoConstraints={videoConstraints}
                     />
-                </Card>
-            </Paper>
-        );
-    } else {
-        return (
-            <Paper>
-                <Card>
-                    <div style={{ position: "relative" }}>
-                        <Webcam
-                            audio={false}
-                            ref={props.webcamRef}
-                            height={Math.floor(height * 0.7)}
-                            screenshotFormat="image/jpeg"
-                            videoConstraints={videoConstraints}
-                        />
-                        <Grid container
-                              style={{ position: "absolute", bottom: "10px" }}
-                              direction={"column"}
-                              justify={"center"}
-                              alignItems={"center"}
-                              alignContent={"center"}
-                              spacing={5}
-                        >
-                            <Grid item>
-                                <div style={{ backgroundColor: "rgba(255, 255, 255, 0.5)", borderRadius: "50%" }}>
-                                    <IconButton variant="contained" onClick={props.capture}>
-                                        <PhotoCamera />
-                                    </IconButton></div>
-                            </Grid></Grid></div>
-                </Card>
-            </Paper>
-        );
-    }
+                    <Grid container
+                        style={{ position: "absolute", bottom: "20px" }}
+                        direction={"column"}
+                        justify={"center"}
+                        alignItems={"center"}
+                        alignContent={"center"}
+                        spacing={5}
+                    >
+                        <Grid item>
+                            <div style={{ backgroundColor: "rgba(255, 255, 255, 0.5)", borderRadius: "50%" }}>
+                                <IconButton variant="contained" onClick={props.capture}>
+                                    <PhotoCamera />
+                                </IconButton></div>
+                        </Grid></Grid></div>
+            </Card>
+        </Paper>
+    );
 };
 
 const SideMenuContent = props => {
@@ -86,9 +70,6 @@ const SideMenuContent = props => {
                     By using our app, you save your recycling facilities time and work while also reducing
                     unnecessary waste in our landfills!
                 </Typography>
-            </Grid>
-            <Grid item>
-                <Button size="large" variant="contained" color="primary" onClick={props.capture}>Capture Photo</Button>
             </Grid>
         </>
     );
