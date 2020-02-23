@@ -24,5 +24,5 @@ We're hosting it on GCP, and our domain was free from Domain.com! See [recyclabl
 To run it, you'll probably need nvm and npm and other wack commands starting with node-... Some combination of `git clone`, `nvm install --lte`, `npm i`, and `npm run prod` might help install and start it.
 
 ## Scaling
-Recyclable is quite scalable: recycling capabilities are easily acquired or entered for any city, and the machine learnign dataset can be improved upon to include products from all localities while also improving accuracy.
-The model can be deployed in parallel using only minimal comouting power. Our implementation costs only a few cents per hour to operate!
+Recyclable is quite scalable: recycling capabilities are easily acquired or entered for any city, and the machine learning dataset can be improved upon to include products from all localities while also improving accuracy.
+The model can be deployed in parallel using only minimal computing power. Our implementation costs only a few cents per hour to operate.
