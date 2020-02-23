@@ -17,13 +17,22 @@ const Layout = props => {
 
     const classes = useStyles();
 
-    return(
+    const retrieveClassificationResponse = response => {
+        response.json().then(json => {
+            setObjectDetails(response.body);
+        })
+    }
+
+    return (
         <>
             <Container>
                 <Box className={classes.page}>
                     <Grid container justify={"center"} alignContent={"center"} alignItems={"center"} direction={"column"}>
                         <Grid item>
-                            { page ? <DetailsPage dataUri={picUri} objectDetails={objectDetails}/> : <CameraComponent setPicUri={setPicUri} setPage={setPage} /> }
+                            {page ?
+                                <DetailsPage dataUri={picUri} objectDetails={objectDetails} />
+                                :
+                                <CameraComponent setPicUri={setPicUri} setPage={setPage} retrieveClassificationResponse={retrieveClassificationResponse} />}
                         </Grid>
                     </Grid>
                 </Box>

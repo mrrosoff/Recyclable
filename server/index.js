@@ -4,6 +4,8 @@ const https = require('https');
 const express = require('express');
 const bodyParser = require('body-parser');
 
+import classifyProduct from "./recyclableClassification";
+
 const app = express();
 let credentials, httpsServer;
 let secure = false;
@@ -41,7 +43,7 @@ app.use((req, res, next) => {
 
 app.use(express.static('dist'));
 
-app.post('/api/getProductType', (req, res) => predict(req.body["dataUri"]).then(r => res.send(r)).catch(err => console.log(err)));
+app.post('/api/getProductType', (req, res) => predict(req.body["dataUri"]).then(r => res.send(classifyProduct(r))).catch(err => console.log(err)));
 
 httpServer.listen(8080, () => console.log('HTTP Server Running on Port 8080'));
 
