@@ -23,7 +23,9 @@ const httpsServer = https.createServer(credentials, app);
 
 // set up a route to redirect http to https
 app.use(function(req, res) {
-	res.redirect('https://' + req.headers.host + req.url);
+	if (!req.secure) {
+		res.redirect('https://' + req.headers.host + req.url);
+	}
 });
 
 httpServer.listen(8080, () => {
