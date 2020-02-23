@@ -6,7 +6,7 @@ import DetailsIcon from '@material-ui/icons/Info';
 
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles({ root: { position: 'fixed', bottom: 0, padding: 10, width: '100%' } });
+const useStyles = makeStyles({ root: { position: 'fixed', bottom: 0, width: '100%' } });
 
 const Navigation = (props) => {
 
