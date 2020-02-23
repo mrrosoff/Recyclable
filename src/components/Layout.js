@@ -30,7 +30,7 @@ const Layout = props => {
                             {page ?
                                 <DetailsPage dataUri={picUri} objectDetails={objectDetails} />
                                 :
-                                <CameraComponent setPicUri={setPicUri} setPage={setPage} retrieveClassificationResponse={retrieveClassificationResponse} />}
+                                <CameraComponent setPicUri={setPicUri} setPage={setPage} retrieveClassificationResponse={retrieveClassificationResponse} setObjectDetails={setObjectDetails}/>}
                         </Grid>
                     </Grid>
                 </Box>

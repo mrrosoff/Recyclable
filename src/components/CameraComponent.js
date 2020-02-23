@@ -113,10 +113,11 @@ const SideTextMenu = props => {
 const CameraPage = props => {
 
     const webcamRef = React.useRef(null);
-    let { setPicUri, setPage, retrieveClassificationResponse } = props;
+    let { setPicUri, setPage, retrieveClassificationResponse, setObjectDetails } = props;
 
     const capture = useCallback(() => {
         const imageSrc = webcamRef.current.getScreenshot();
+        setObjectDetails({name: '', recyclable: null});
         resizeImage(imageSrc, 1024, uri => {
             // console.log('resized:', uri);
             sendServerRequestWithBody("getProductType", {"dataUri": uri}).then(r => {
