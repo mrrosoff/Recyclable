@@ -6,6 +6,7 @@ import PhotoCamera from '@material-ui/icons/PhotoCamera';
 
 import {sendServerRequestWithBody} from "../api/restfulAPI";
 import useWindowDimensions from "../utils/windowDimensions";
+import resizeImage from "../utils/resizeImage";
 
 const WebcamSection = props => {
 
@@ -116,10 +117,13 @@ const CameraPage = props => {
 
     const capture = useCallback(() => {
         const imageSrc = webcamRef.current.getScreenshot();
-        sendServerRequestWithBody("getProductType", {"dataUri": imageSrc}).then(r => {
-            console.log(r);
-            retrieveClassificationResponse(r);
-        });
+        resizeImage(imageSrc, 1024, uri => {
+            sendServerRequestWithBody("getProductType", {"dataUri": uri}).then(r => {
+                console.log(r);
+                retrieveClassificationResponse(r);
+            });
+        })
+        
         setPage(1);
         setPicUri(imageSrc);
     }, [webcamRef]);
