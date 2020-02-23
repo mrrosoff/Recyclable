@@ -20,9 +20,7 @@ try {
 }
 catch(e) {}
 
-
-
-require('./routes')(app);
+// require('./routes')(app);
 
 const httpServer = http.createServer(app);
 if (secure) {
