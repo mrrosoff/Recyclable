@@ -19,12 +19,15 @@ const httpServer = http.createServer(app);
 const httpsServer = https.createServer(credentials, app);
 
 // set up a route to redirect http to https
-app.use((req, res) => {
+app.use((req, res, next) => {
 	if (!req.secure) {
+		console.log('Redirecting insecure request');
 		res.redirect('https://' + req.headers.host + req.url);
 	}
-	return express.static('dist');
+	next();
 });
+
+app.use(express.static('dist'));
 
 httpServer.listen(8080, () => {
 	console.log('HTTP Server running on port 8080');
