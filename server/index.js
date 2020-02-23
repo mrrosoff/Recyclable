@@ -22,6 +22,8 @@ catch(e) {}
 
 
 
+require('./routes')(app);
+
 const httpServer = http.createServer(app);
 if (secure) {
 	httpsServer = https.createServer(credentials, app);
