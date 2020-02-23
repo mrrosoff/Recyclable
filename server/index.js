@@ -33,7 +33,9 @@ app.use((req, res, next) => {
 		console.log('Redirecting insecure request');
 		res.redirect('https://' + req.headers.host + req.url);
 	}
-	next();
+	else {
+		next();
+	}
 });
 
 app.use(express.static('dist'));
