@@ -1,26 +1,24 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
+const outputDirectory = "dist";
 
 module.exports = {
-	watch: false,
-	mode: 'development',
-	entry: './src/index.js',
-	output: {
-		filename: 'main.js',
-		path: path.resolve(__dirname, 'dist')
-	},
+	entry: ['@babel/polyfill', './src/index.js'],
+	devServer: { port: 3000, open: true, hot: true },
 	module: {
 		rules: [
-			{
-				test: /\.js$/,
-				exclude: /node_modules/,
-				loader: "babel-loader"
-			}
+			{test: /\.js$/, exclude: /node_modules/, use: {loader: "babel-loader"}},
+			{test: /\.css$/, use: ['style-loader', 'css-loader',]},
+			{test: /\.(png|svg|jpg|gif)$/, use: ['file-loader',]},
 		]
 	},
 	plugins: [
-		new HtmlWebpackPlugin({
-			template: 'src/index.html'
-		})
-	]
-}
+		new CleanWebpackPlugin(),
+		new HtmlWebpackPlugin({ template: "src/static/index.html", favicon: "src/static/favicon.ico"}),
+		new webpack.HotModuleReplacementPlugin()
+	],
+	output: { filename: "bundle.js", path: path.join(__dirname, outputDirectory) },
+};
