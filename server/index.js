@@ -7,9 +7,9 @@ const express = require('express');
 const app = express();
 
 // Certificate
-const privateKey = fs.readFileSync('../recyclable.tech/privkey.pem', 'utf8');
-const certificate = fs.readFileSync('../recyclable.tech/cert.pem', 'utf8');
-const ca = fs.readFileSync('../recyclable.tech/chain.pem', 'utf8');
+const privateKey = fs.readFileSync('/home/Ben/cert/privkey.pem', 'utf8');
+const certificate = fs.readFileSync('/home/Ben/cert/cert.pem', 'utf8');
+const ca = fs.readFileSync('/home/Ben/cert/chain.pem', 'utf8');
 
 const credentials = {
 	key: privateKey,
