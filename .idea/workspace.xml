@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47c35639-2546-4dd6-9ccd-0a908333eb8a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/api/getProductType.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/routes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/restfulAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/restfulAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CameraComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CameraComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582446803571</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Server">
+      <created>1582451842906</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1582451842906</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +287,8 @@
     <MESSAGE value="test" />
     <MESSAGE value="Stuff" />
     <MESSAGE value="UI Buffs" />
-    <option name="LAST_COMMIT_MESSAGE" value="UI Buffs" />
+    <MESSAGE value="Server" />
+    <option name="LAST_COMMIT_MESSAGE" value="Server" />
   </component>
   <component name="WindowStateProjectService">
     <state x="212" y="150" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582432550936">
@@ -296,11 +299,11 @@
       <screen x="0" y="30" width="1500" height="915" />
     </state>
     <state x="486" y="238" width="524" height="506" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.30.1500.915@0.30.1500.915" timestamp="1582451498178" />
-    <state x="368" y="68" width="778" height="777" key="CommitChangelistDialog2" timestamp="1582446803507">
+    <state x="368" y="66" width="778" height="777" key="CommitChangelistDialog2" timestamp="1582451842807">
       <screen x="0" y="30" width="1500" height="915" />
     </state>
     <state x="314" y="23" width="778" height="777" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1582435864871" />
-    <state x="368" y="68" width="759" height="810" key="CommitChangelistDialog2/0.30.1500.915@0.30.1500.915" timestamp="1582446803507" />
+    <state x="368" y="66" width="759" height="810" key="CommitChangelistDialog2/0.30.1500.915@0.30.1500.915" timestamp="1582451842807" />
     <state x="493" y="393" width="385" height="199" key="Github.ShareDialog" timestamp="1582428975825">
       <screen x="0" y="30" width="1500" height="915" />
     </state>
@@ -329,16 +332,16 @@
       <screen x="0" y="30" width="1500" height="915" />
     </state>
     <state x="467" y="207" width="562" height="568" key="MultipleFileMergeDialog/0.30.1500.915@0.30.1500.915" timestamp="1582444861075" />
-    <state x="348" y="195" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1582446805155">
+    <state x="348" y="193" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1582451844176">
       <screen x="0" y="30" width="1500" height="915" />
     </state>
     <state x="297" y="175" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1582435866401" />
-    <state x="348" y="195" width="800" height="556" key="Vcs.Push.Dialog.v2/0.30.1500.915@0.30.1500.915" timestamp="1582446805155" />
-    <state x="557" y="406" width="390" height="152" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582444820237">
+    <state x="348" y="193" width="800" height="556" key="Vcs.Push.Dialog.v2/0.30.1500.915@0.30.1500.915" timestamp="1582451844176" />
+    <state x="557" y="404" width="390" height="152" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582459520225">
       <screen x="0" y="30" width="1500" height="915" />
     </state>
     <state x="475" y="346" width="390" height="152" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.777@0.23.1280.777" timestamp="1582435029818" />
-    <state x="557" y="406" width="385" height="165" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.30.1500.915@0.30.1500.915" timestamp="1582444820237" />
+    <state x="557" y="404" width="385" height="165" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.30.1500.915@0.30.1500.915" timestamp="1582459520225" />
     <state x="413" y="226" width="672" height="678" key="search.everywhere.popup" timestamp="1582451218709">
       <screen x="0" y="30" width="1500" height="915" />
     </state>

@@ -38,12 +38,12 @@ const WebcamSection = props => {
                             videoConstraints={videoConstraints}
                         />
                         <Grid container
-                            style={{ position: "absolute", bottom: "10px" }}
-                            direction={"column"}
-                            justify={"center"}
-                            alignItems={"center"}
-                            alignContent={"center"}
-                            spacing={5}
+                              style={{ position: "absolute", bottom: "10px" }}
+                              direction={"column"}
+                              justify={"center"}
+                              alignItems={"center"}
+                              alignContent={"center"}
+                              spacing={5}
                         >
                             <Grid item>
                                 <div style={{ backgroundColor: "rgba(255, 255, 255, 0.5)", borderRadius: "50%" }}>
@@ -64,7 +64,27 @@ const SideMenuContent = props => {
                 <Typography variant={"h3"}>Recyclable</Typography>
             </Grid>
             <Grid item>
-                <Typography variant={"body1"}>Use this tool to find out if an item is recyclable.</Typography>
+                <Typography variant={"body1"}>
+                    You finish your delicious diabetes-in-a-bottle beverage graciously provided by the good organizers
+                    of HackCU, and then turn your attention to the problem of the plastic or light aluminum container
+                    with which you are about to pollute the environment. You inspect it for a recycling number or
+                    instruction, but in your sleep-deprived deliriousness, find nothing.  What will you do??
+                </Typography>
+            </Grid>
+            <Grid item>
+                <Typography variant={"body1"}>
+                    Attempting to recycle containers that can't be recycled causes a lot of havoc and extra work for
+                    recycling plants, thereby decreasing their efficiency and increasing their cost. But putting
+                    extra waste in the landfills is just as bad: this practice is entirely unsustainable.
+                </Typography>
+            </Grid>
+            <Grid item>
+                <Typography variant={"body1"}>
+                    This is where Recyclable comes in: with just a brief interaction with our app using a mobile
+                    device of your choice, you can quickly determine which waste articles are recyclable in your area.
+                    By using our app, you save your recycling facilities time and work while also reducing
+                    unnecessary waste in our landfills!
+                </Typography>
             </Grid>
             <Grid item>
                 <Button size="large" variant="contained" color="primary" onClick={props.capture}>Capture Photo</Button>
@@ -79,7 +99,7 @@ const SideTextMenu = props => {
 
     if (width >= 960) {
         return(
-            <Grid container direction={"column"} spacing={5}>
+            <Grid container direction={"column"} spacing={3}>
                 <SideMenuContent {...props} />
             </Grid>
         );

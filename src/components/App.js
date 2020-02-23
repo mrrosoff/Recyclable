@@ -3,6 +3,7 @@ import React from "react";
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import { red, orange, green, blue, purple } from '@material-ui/core/colors';
+import CssBaseline from "@material-ui/core/CssBaseline";
 
 import { SnackbarProvider, useSnackbar } from 'notistack';
 
@@ -34,6 +35,7 @@ const App = () => {
 
     return(
         <ThemeProvider theme={theme}>
+            <CssBaseline />
             <SnackbarProvider maxSnack={3} preventDuplicate>
                 <LoadApp />
             </SnackbarProvider>
