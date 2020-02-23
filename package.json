@@ -1,17 +1,18 @@
 {
   "name": "recyclable",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Web App To Help Create A Sustainable Future",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon server/index.js",
-    "client": "webpack-dev-server --mode development --devtool inline-source-map",
-    "build": "webpack --mode production",
-    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
-    "prod": "concurrently --kill-others-on-fail \"npm run build\" \"node server/index.js\""
+    "devServer": "nodemon server/index.js",
+    "prodServer": "node server/index.js",
+    "devClient": "webpack-dev-server --mode development --devtool inline-source-map",
+    "prodClient": "webpack --mode production",
+    "dev": "concurrently --kill-others-on-fail \"npm run devClient\" \"npm run devServer\"",
+    "prod": "concurrently --kill-others-on-fail \"npm run prodClient\" \"npm run prodServer\""
   },
   "keywords": [],
-  "author": "",
+  "author": "Ben Gillett, David Hallstrom, Max Rosoff",
   "license": "ISC",
   "dependencies": {
     "@material-ui/core": "^4.9.0",
