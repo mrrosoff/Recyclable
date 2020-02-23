@@ -2,7 +2,8 @@ const fs = require('fs');
 const http = require('http');
 const https = require('https');
 const express = require('express');
-const bodyParser = require('body-parser');
+const logger = require('morgan');
+const cors = require('cors');
 
 const classifyProduct = require("./recyclableClassification.js");
 
@@ -23,7 +24,9 @@ try {
 }
 catch(e) {}
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(logger('dev'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
 const httpServer = http.createServer(app);
 if (secure) {
@@ -43,13 +46,11 @@ app.use((req, res, next) => {
 
 app.use(express.static('dist'));
 
-app.post('/api/getProductType', (req, res) => predict(req.body["dataUri"]).then(r => res.send(classifyProduct(r))).catch(err => console.log(err)));
+app.post('/api/getProductType', (req, res) => predict(req.body.body["dataUri"]).then(r => res.send(classifyProduct(r))).catch(err => console.log(err)));
 
 httpServer.listen(8080, () => console.log('HTTP Server Running on Port 8080'));
 
-if (secure) {
-	httpsServer.listen(8443, () => console.log('HTTPS Server Running on Port 8443'));
-}
+if (secure) { httpsServer.listen(8443, () => console.log('HTTPS Server Running on Port 8443')); }
 
 
 async function predict(filePath) {
@@ -60,7 +61,6 @@ async function predict(filePath) {
 
 	// Imports the Google Cloud AutoML library
 	const {PredictionServiceClient} = require(`@google-cloud/automl`).v1;
-	const fs = require(`fs`);
 
 	// Instantiates a client
 	const client = new PredictionServiceClient();

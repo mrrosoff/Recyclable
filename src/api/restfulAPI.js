@@ -1,3 +1,4 @@
+import axios from 'axios';
 
 export function sendServerRequest(requestType, serverPort=getOriginalServerPort()) {
   const restfulAPI = `${serverPort}/api/${requestType}`;
@@ -9,15 +10,15 @@ export function sendServerRequestWithBody(requestType, requestBody, serverPort=g
   const restfulAPI = `${serverPort}/api/${requestType}`;
   const requestOptions = {
     method: "POST",
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: JSON.stringify(requestBody)
+    headers: { 'Content-Type': 'application/json' },
+    body: requestBody
   };
   return processRestfulAPI(restfulAPI, requestOptions);
 }
 
 async function processRestfulAPI(restfulAPI, requestOptions) {
   try {
-    let response = await fetch(restfulAPI, requestOptions);
+    let response = await axios.post(restfulAPI, requestOptions);
     return { statusCode: response.status, statusText: response.statusText, body: await response.json() };
   }
   catch(err) {

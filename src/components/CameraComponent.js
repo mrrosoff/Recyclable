@@ -117,14 +117,15 @@ const CameraPage = props => {
 
     const capture = useCallback(() => {
         const imageSrc = webcamRef.current.getScreenshot();
+        console.log(imageSrc);
         resizeImage(imageSrc, 1024, uri => {
             console.log('resized:', uri);
             sendServerRequestWithBody("getProductType", {"dataUri": uri}).then(r => {
                 console.log(r);
                 retrieveClassificationResponse(r);
             });
-        })
-        
+        });
+
         setPage(1);
         setPicUri(imageSrc);
     }, [webcamRef]);
