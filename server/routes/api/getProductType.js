@@ -1,10 +1,10 @@
 /**
  * TODO(developer): Uncomment these variables before running the sample.
  */
-// const projectId = 'YOUR_PROJECT_ID';
-// const location = 'us-central1';
-// const modelId = 'YOUR_MODEL_ID';
-// const filePath = 'path_to_local_file.jpg';
+const projectId = 'recycle-269021';
+const location = 'us-central1';
+const modelId = 'Recycle_20200222065319';
+const filePath = '.';
 
 // Imports the Google Cloud AutoML library
 const {PredictionServiceClient} = require(`@google-cloud/automl`).v1;

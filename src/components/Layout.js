@@ -3,34 +3,44 @@ import Webcam from "react-webcam";
 
 import Navigation from "./Navigation";
 
-import Container from '@material-ui/core/Container';
+import { Button, Box, Container, Grid } from '@material-ui/core';
 import DetailsPage from './pages/DetailsPage';
 
 import { sendServerRequestWithBody } from "../api/restfulAPI";
 
 const videoConstraints = {
-    facingMode: "user"
+    facingMode: "environment"
 };
 
 const CameraPage = () => {
     const webcamRef = React.useRef(null);
 
     const capture = React.useCallback(() => {
-            const imageSrc = webcamRef.current.getScreenshot();
-        },
-        [webcamRef]
-    );
+        const imageSrc = webcamRef.current.getScreenshot();
+        console.log(imageSrc);
+    }, [webcamRef]);
 
     return (
-        <>
-            <Webcam
-                audio={false}
-                ref={webcamRef}
-                screenshotFormat="image/jpeg"
-                videoConstraints={videoConstraints}
-            />
-            <button onClick={capture}>Capture photo</button>
-        </>
+        <Grid container
+              justify={"center"}
+              alignContent={"center"}
+              alignItems={"center"}
+              direction={"column"}
+              spacing={5}
+        >
+            <Grid item>
+                    <Webcam
+                        audio={false}
+                        ref={webcamRef}
+                        height={"600"}
+                        screenshotFormat="image/jpeg"
+                        videoConstraints={videoConstraints}
+                    />
+            </Grid>
+            <Grid item>
+                <Button variant="contained" color="primary" onClick={capture}>Capture photo</Button>
+            </Grid>
+        </Grid>
     );
 };
 /*
@@ -56,8 +66,16 @@ const Layout = props => {
 
     return(
         <Container>
-            { page ? <DetailsPage dataUri={picUri}/> : <CameraPage setPicUri={setPicUri} setPage={setPage} /> }
-            <Navigation page={page} setPage={setPage} />
+            <Grid container justify={"center"} alignContent={"center"} alignItems={"center"} direction={"column"}>
+                <Grid item>
+                    <Box height={"90vh"}>
+                        { page ? <DetailsPage dataUri={picUri}/> : <CameraPage setPicUri={setPicUri} setPage={setPage} /> }
+                    </Box>
+                </Grid>
+                <Grid item>
+                    <Navigation page={page} setPage={setPage} />
+                </Grid>
+            </Grid>
         </Container>
     );
 };
