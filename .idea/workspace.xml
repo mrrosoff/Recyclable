@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47c35639-2546-4dd6-9ccd-0a908333eb8a" name="Default Changelist" comment="" />
+    <list default="true" id="47c35639-2546-4dd6-9ccd-0a908333eb8a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/api/getCurrentLocation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/recyclableClassification.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/recyclableClassification.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/DetailsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/DetailsPage.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1582427981881</updated>
       <workItem from="1582427983963" duration="4566000" />
-      <workItem from="1582478830169" duration="2773000" />
+      <workItem from="1582478830169" duration="4621000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1582428951783</created>
@@ -299,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582481600925</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Image!">
+      <created>1582481844334</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1582481844334</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,7 +329,8 @@
     <MESSAGE value="Nav Bar Fix?" />
     <MESSAGE value="No Info Page" />
     <MESSAGE value="Stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stuff" />
+    <MESSAGE value="Image!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Image!" />
   </component>
   <component name="WindowStateProjectService">
     <state x="212" y="150" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582432550936">
@@ -328,11 +341,11 @@
       <screen x="0" y="30" width="1500" height="915" />
     </state>
     <state x="486" y="238" width="524" height="506" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.30.1500.915@0.30.1500.915" timestamp="1582451498178" />
-    <state x="368" y="58" width="778" height="777" key="CommitChangelistDialog2" timestamp="1582481600855">
+    <state x="368" y="56" width="778" height="777" key="CommitChangelistDialog2" timestamp="1582481844260">
       <screen x="0" y="30" width="1500" height="915" />
     </state>
     <state x="314" y="23" width="778" height="777" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1582435864871" />
-    <state x="368" y="58" width="759" height="810" key="CommitChangelistDialog2/0.30.1500.915@0.30.1500.915" timestamp="1582481600855" />
+    <state x="368" y="56" width="759" height="810" key="CommitChangelistDialog2/0.30.1500.915@0.30.1500.915" timestamp="1582481844260" />
     <state x="493" y="393" width="385" height="199" key="Github.ShareDialog" timestamp="1582428975825">
       <screen x="0" y="30" width="1500" height="915" />
     </state>
@@ -365,11 +378,11 @@
       <screen x="0" y="30" width="1500" height="915" />
     </state>
     <state x="467" y="205" width="562" height="568" key="MultipleFileMergeDialog/0.30.1500.915@0.30.1500.915" timestamp="1582481626892" />
-    <state x="348" y="183" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1582481639530">
+    <state x="348" y="181" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1582481845407">
       <screen x="0" y="30" width="1500" height="915" />
     </state>
     <state x="297" y="175" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1582435866401" />
-    <state x="348" y="183" width="800" height="556" key="Vcs.Push.Dialog.v2/0.30.1500.915@0.30.1500.915" timestamp="1582481639530" />
+    <state x="348" y="181" width="800" height="556" key="Vcs.Push.Dialog.v2/0.30.1500.915@0.30.1500.915" timestamp="1582481845407" />
     <state x="557" y="394" width="390" height="152" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582479847374">
       <screen x="0" y="30" width="1500" height="915" />
     </state>
