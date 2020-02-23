@@ -14,7 +14,7 @@ You finish your delicious diabetes-in-a-bottle beverage graciously provided by t
 
 Attempting to recycle containers that can't be recycled causes a lot of havoc and extra work for recycling plants, thereby decreasing their efficiency and increasing their cost. But putting extra waste in the landfills is just as bad: this practice is entirely unsustainable. What to do?
 
-This is where Recyclable comes in: with just a brief interaction with our app using a mobile device of your choice, you can quickly determine which waste articles are recyclable in your area. Using sophisticated computer vision algorithms and our extensive hand-picked dataset, our app uses a single image of your waste product to determine its recycling class, and then helps you make your decision.
+This is where Recyclable comes in: with just a brief interaction with our app using a mobile device of your choice, you can quickly determine which waste articles are recyclable in your area. Using sophisticated computer vision algorithms and our extensive hand-picked dataset, our app uses a single image of your waste product to determine its recycling class to help you make your decision.
 **By using our app, you save your recycling facilities time and work while also reducing unnecessary waste in our landfills!**
 
 ## How does it work?
