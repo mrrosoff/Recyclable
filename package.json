@@ -6,8 +6,9 @@
   "scripts": {
     "server": "nodemon server/index.js",
     "client": "webpack-dev-server --mode development --devtool inline-source-map",
+    "build": "webpack --mode production",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
-    "prod": "webpack --mode production"
+    "prod": "concurrently --kill-others-on-fail \"npm run build\" \"node server/index.js\""
   },
   "keywords": [],
   "author": "",
