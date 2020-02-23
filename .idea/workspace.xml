@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="47c35639-2546-4dd6-9ccd-0a908333eb8a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/recyclableClassification.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/recyclableClassification.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/restfulAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/restfulAPI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CameraComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CameraComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/DetailsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/DetailsPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1582427981881</updated>
       <workItem from="1582427983963" duration="4566000" />
+      <workItem from="1582478830169" duration="245000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1582428951783</created>
@@ -355,11 +350,11 @@
     </state>
     <state x="297" y="175" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1582435866401" />
     <state x="348" y="191" width="800" height="556" key="Vcs.Push.Dialog.v2/0.30.1500.915@0.30.1500.915" timestamp="1582460120572" />
-    <state x="557" y="398" width="390" height="152" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582467724030">
+    <state x="557" y="396" width="390" height="152" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582478852131">
       <screen x="0" y="30" width="1500" height="915" />
     </state>
     <state x="475" y="346" width="390" height="152" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.777@0.23.1280.777" timestamp="1582435029818" />
-    <state x="557" y="398" width="385" height="165" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.30.1500.915@0.30.1500.915" timestamp="1582467724030" />
+    <state x="557" y="396" width="385" height="165" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.30.1500.915@0.30.1500.915" timestamp="1582478852131" />
     <state x="414" y="219" key="run.anything.popup" timestamp="1582466072090">
       <screen x="0" y="30" width="1500" height="915" />
     </state>
