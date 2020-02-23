@@ -6,14 +6,18 @@ import Navigation from "./Navigation";
 import Container from '@material-ui/core/Container';
 import DetailsPage from './pages/DetailsPage';
 
+import { sendServerRequestWithBody } from "../api/restfulAPI";
+
 const CameraPage = (props) => {
     const {setPicUri, setPage} = props;
 
     const handleTakePhoto = (dataUri) => {
         console.log(dataUri);
         setPicUri(dataUri);
+        new Promise(() => {sendServerRequestWithBody("getProductType", {"dataUri": dataUri})}).then(response => {
+            console.log("response");
+        });
     }
-
     const handleTakePhotoAnimationDone = (dataUri) => {
         setPage(1);
     }
@@ -29,7 +33,7 @@ const Layout = props => {
     const [page, setPage] = useState(0);
 
     return(
-        <>
+        <Container>
             <div style={{minHeight: "90vh"}}>
                     {page ?
                         <DetailsPage dataUri={picUri}/>
@@ -39,7 +43,7 @@ const Layout = props => {
             <div style={{minHeight: "10vh"}}>
                 <Navigation page={page} setPage={setPage} />
             </div>
-        </>
+        </Container>
     );
 };
 
