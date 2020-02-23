@@ -18,7 +18,7 @@ const credentials = {
 };
 
 app.use((req, res) => {
-	res.send('Hello there !');
+	res.send('Yay Recyclable!');
 });
 
 // Starting both http & https servers
