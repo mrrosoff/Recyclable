@@ -13,6 +13,7 @@
   "author": "Ben Gillett, David Hallstrom, Max Rosoff",
   "license": "ISC",
   "dependencies": {
+    "@google-cloud/automl": "^1.10.1",
     "@material-ui/core": "^4.9.0",
     "@material-ui/icons": "^4.5.1",
     "@material-ui/lab": "^4.0.0-alpha.40",
@@ -20,6 +21,7 @@
     "@mui-treasury/components": "^0.3.12",
     "@mui-treasury/styles": "^0.3.6",
     "@mui-treasury/styling": "^0.2.7",
+    "body-parser": "latest",
     "clsx": "latest",
     "express": "^4.17.1",
     "framer-motion": "^1.8.4",

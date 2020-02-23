@@ -23,7 +23,7 @@ const Layout = props => {
                 <Box className={classes.page}>
                     <Grid container justify={"center"} alignContent={"center"} alignItems={"center"} direction={"column"}>
                         <Grid item>
-                            { page ? <DetailsPage dataUri={picUri}/> : <CameraComponent setPicUri={setPicUri} setPage={setPage} /> }
+                            { page ? <DetailsPage dataUri={picUri} objectDetails={objectDetails}/> : <CameraComponent setPicUri={setPicUri} setPage={setPage} /> }
                         </Grid>
                     </Grid>
                 </Box>

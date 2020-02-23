@@ -36,7 +36,7 @@ const SideMenuContent = props => {
                 <Typography variant={"body1"}>Use this tool to find out if an item is recyclable.</Typography>
             </Grid>
             <Grid item>
-                <Button variant="contained" color="primary" onClick={props.capture}>Capture photo</Button>
+                <Button size="large" variant="contained" color="primary" onClick={props.capture}>Capture Photo</Button>
             </Grid>
         </>
     );
@@ -49,7 +49,7 @@ const SideTextMenu = props => {
     if (width >= 960) {
         return(
             <Grid container direction={"column"} spacing={5}>
-                <SideMenuContent/>
+                <SideMenuContent {...props} />
             </Grid>
         );
     } else {
@@ -61,7 +61,7 @@ const SideTextMenu = props => {
                   alignContent={"center"}
                   spacing={5}
             >
-                <SideMenuContent/>
+                <SideMenuContent {...props} />
             </Grid>
         );
     }
@@ -71,36 +71,32 @@ const SideTextMenu = props => {
 const CameraPage = props => {
 
     const webcamRef = React.useRef(null);
-    let dataUri, setPage = props;
+    let { setPicUri, setPage } = props;
 
     const capture = useCallback(() => {
         const imageSrc = webcamRef.current.getScreenshot();
-        sendServerRequestWithBody("getProductType", {"dataUri": dataUri}).then(r => {
-            console.log(imageSrc)
+        sendServerRequestWithBody("getProductType", {"dataUri": imageSrc}).then(r => {
+            console.log(r);
         });
         setPage(1);
+        setPicUri(imageSrc);
     }, [webcamRef]);
 
     return (
-        <Box mb={30}>
-            <Grid container
-                  justify={"center"}
-                  alignContent={"center"}
-                  alignItems={"center"}
-                  spacing={5}
-            >
-                <Grid item xs={12} md={7}>
-                    <WebcamSection
-                        webcamRef={webcamRef}
-                    />
-                </Grid>
-                <Grid item xs={12} md={5}>
-                    <SideTextMenu
-                        capture={capture}
-                    />
-                </Grid>
+        <Grid container
+              justify={"center"}
+              alignContent={"center"}
+              alignItems={"center"}
+              spacing={5}
+              style={{paddingBottom: "10vh"}}
+        >
+            <Grid item xs={12} md={7}>
+                <WebcamSection webcamRef={webcamRef}/>
             </Grid>
-        </Box>
+            <Grid item xs={12} md={5}>
+                <SideTextMenu capture={capture}/>
+            </Grid>
+        </Grid>
     );
 };
 

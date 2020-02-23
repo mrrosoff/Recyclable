@@ -7,7 +7,11 @@ export function sendServerRequest(requestType, serverPort=getOriginalServerPort(
 
 export function sendServerRequestWithBody(requestType, requestBody, serverPort=getOriginalServerPort()) {
   const restfulAPI = `${serverPort}/api/${requestType}`;
-  const requestOptions = { method: "POST", body: JSON.stringify(requestBody)};
+  const requestOptions = {
+    method: "POST",
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: JSON.stringify(requestBody)
+  };
   return processRestfulAPI(restfulAPI, requestOptions);
 }
 
