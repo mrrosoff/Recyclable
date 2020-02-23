@@ -127,26 +127,26 @@
       <screen x="0" y="30" width="1500" height="915" />
     </state>
     <state x="486" y="240" width="524" height="506" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.30.1500.915@0.30.1500.915" timestamp="1582428209029" />
-    <state x="368" y="78" width="759" height="810" key="CommitChangelistDialog2" timestamp="1582433362464">
+    <state x="368" y="76" width="759" height="810" key="CommitChangelistDialog2" timestamp="1582433796219">
       <screen x="0" y="30" width="1500" height="915" />
     </state>
     <state x="314" y="65" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1582432926145" />
-    <state x="368" y="78" width="759" height="810" key="CommitChangelistDialog2/0.30.1500.915@0.30.1500.915" timestamp="1582433362464" />
+    <state x="368" y="76" width="759" height="810" key="CommitChangelistDialog2/0.30.1500.915@0.30.1500.915" timestamp="1582433796219" />
     <state x="493" y="393" width="385" height="199" key="Github.ShareDialog" timestamp="1582428975825">
       <screen x="0" y="30" width="1500" height="915" />
     </state>
     <state x="493" y="393" width="385" height="199" key="Github.ShareDialog/0.30.1500.915@0.30.1500.915" timestamp="1582428975825" />
-    <state x="534" y="210" width="427" height="569" key="VCS.ChangeListViewerDialog" timestamp="1582433777849">
+    <state x="534" y="208" width="427" height="569" key="VCS.ChangeListViewerDialog" timestamp="1582433800949">
       <screen x="0" y="30" width="1500" height="915" />
     </state>
-    <state x="534" y="210" width="427" height="569" key="VCS.ChangeListViewerDialog/0.30.1500.915@0.30.1500.915" timestamp="1582433777849" />
+    <state x="534" y="208" width="427" height="569" key="VCS.ChangeListViewerDialog/0.30.1500.915@0.30.1500.915" timestamp="1582433800949" />
     <state x="348" y="207" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1582433363806">
       <screen x="0" y="30" width="1500" height="915" />
     </state>
     <state x="348" y="207" width="800" height="556" key="Vcs.Push.Dialog.v2/0.30.1500.915@0.30.1500.915" timestamp="1582433363806" />
-    <state x="557" y="408" width="385" height="165" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582433772909">
+    <state x="557" y="406" width="385" height="165" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582433798883">
       <screen x="0" y="30" width="1500" height="915" />
     </state>
-    <state x="557" y="408" width="385" height="165" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.30.1500.915@0.30.1500.915" timestamp="1582433772909" />
+    <state x="557" y="406" width="385" height="165" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.30.1500.915@0.30.1500.915" timestamp="1582433798883" />
   </component>
 </project>
