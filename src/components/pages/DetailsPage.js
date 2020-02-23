@@ -6,8 +6,11 @@ const DetailsPage = (props) => {
     const {objectDetails: {name, recyclable}} = props;
 
     let message = "Not sure if it's recyclable";
-    if (typeof(recyclable) == "boolean")
+    let color = "auto";
+    if (typeof(recyclable) == "boolean") {
         message = recyclable ? "It's recyclable!" : "It's not recyclable :(";
+        color = recyclable ? "green" : "red";
+    }
 
     
     return <>
@@ -20,7 +23,7 @@ const DetailsPage = (props) => {
                 <h3>{name}</h3>
             </div>
             <div style={{marginLeft: "auto", marginRight: "auto", width: 'fit-content', marginTop: "6px", marginBottom: "6px"}}>
-                <h4>{message}</h4>
+                <h4 style={{color: color}}>{message}</h4>
             </div>
         </>
         ) : (
