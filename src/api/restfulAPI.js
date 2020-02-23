@@ -19,7 +19,7 @@ export function sendServerRequestWithBody(requestType, requestBody, serverPort=g
 async function processRestfulAPI(restfulAPI, requestOptions) {
   try {
     let response = await axios.post(restfulAPI, requestOptions);
-    return { statusCode: response.status, statusText: response.statusText, body: await response.json() };
+    return { statusCode: response.status, statusText: response.statusText, body: response };
   }
   catch(err) {
     return { statusCode: 404, statusText: 'Resource Not Found', body: null }

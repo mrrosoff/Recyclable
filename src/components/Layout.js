@@ -18,10 +18,8 @@ const Layout = props => {
     const classes = useStyles();
 
     const retrieveClassificationResponse = response => {
-        response.json().then(json => {
-            setObjectDetails(response.body);
-        })
-    }
+        setObjectDetails(response);
+    };
 
     return (
         <>

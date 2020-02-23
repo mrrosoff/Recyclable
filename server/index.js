@@ -53,11 +53,10 @@ httpServer.listen(8080, () => console.log('HTTP Server Running on Port 8080'));
 if (secure) { httpsServer.listen(8443, () => console.log('HTTPS Server Running on Port 8443')); }
 
 
-async function predict(filePath) {
-
+async function predict(image) {
 	const projectId = 'recycle-269021';
 	const location = 'us-central1';
-	const modelId = 'Recycle_20200222065319';
+	const modelId = 'ICN3765902091923488768';
 
 	// Imports the Google Cloud AutoML library
 	const {PredictionServiceClient} = require(`@google-cloud/automl`).v1;
@@ -68,19 +67,23 @@ async function predict(filePath) {
 	// Construct request
 	// params is additional domain-specific parameters.
 	// score_threshold is used to filter the result
+	let base64Data = image.replace(/^data:image\/jpeg;base64,/, "");
+	//console.log(base64Data);
+	let data = Buffer.from(base64Data, 'base64');
+	//console.log(data.toString());
 	const request = {
 		name: client.modelPath(projectId, location, modelId),
 		payload: {
 			image: {
-				imageBytes: filePath,
-			},
-		},
+				imageBytes: data.toString('base64')
+			}
+		}
 	};
 
 	const [response] = await client.predict(request);
-
-	for (const annotationPayload of response.payload) {
-		console.log(`Predicted class name: ${annotationPayload.displayName}`);
-		console.log(`Predicted class score: ${annotationPayload.classification.score}`);
-	}
+	// for (const annotationPayload of response.payload) {
+	// 	console.log(`Predicted class name: ${annotationPayload.displayName}`);
+	// 	console.log(`Predicted class score: ${annotationPayload.classification.score}`);
+	// }
+	return response.payload;
 }
