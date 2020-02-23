@@ -19,6 +19,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1YBtnRJGD1G3OLo5OpXab1BDL76" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -116,17 +117,21 @@
       <screen x="0" y="30" width="1500" height="915" />
     </state>
     <state x="486" y="240" width="524" height="506" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.30.1500.915@0.30.1500.915" timestamp="1582428209029" />
-    <state x="368" y="82" width="759" height="810" key="CommitChangelistDialog2" timestamp="1582431481073">
+    <state x="368" y="80" width="759" height="810" key="CommitChangelistDialog2" timestamp="1582432564860">
       <screen x="0" y="30" width="1500" height="915" />
     </state>
-    <state x="368" y="82" width="759" height="810" key="CommitChangelistDialog2/0.30.1500.915@0.30.1500.915" timestamp="1582431481073" />
+    <state x="368" y="80" width="759" height="810" key="CommitChangelistDialog2/0.30.1500.915@0.30.1500.915" timestamp="1582432564860" />
     <state x="493" y="393" width="385" height="199" key="Github.ShareDialog" timestamp="1582428975825">
       <screen x="0" y="30" width="1500" height="915" />
     </state>
     <state x="493" y="393" width="385" height="199" key="Github.ShareDialog/0.30.1500.915@0.30.1500.915" timestamp="1582428975825" />
-    <state x="348" y="211" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1582431482098">
+    <state x="348" y="209" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1582432566359">
       <screen x="0" y="30" width="1500" height="915" />
     </state>
-    <state x="348" y="211" width="800" height="556" key="Vcs.Push.Dialog.v2/0.30.1500.915@0.30.1500.915" timestamp="1582431482098" />
+    <state x="348" y="209" width="800" height="556" key="Vcs.Push.Dialog.v2/0.30.1500.915@0.30.1500.915" timestamp="1582432566359" />
+    <state x="557" y="412" width="381" height="165" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582432572614">
+      <screen x="0" y="30" width="1500" height="915" />
+    </state>
+    <state x="557" y="412" width="381" height="165" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.30.1500.915@0.30.1500.915" timestamp="1582432572614" />
   </component>
 </project>
