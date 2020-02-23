@@ -4,7 +4,7 @@ const https = require('https');
 const express = require('express');
 const bodyParser = require('body-parser');
 
-import classifyProduct from "./recyclableClassification";
+const classifyProduct = require("./recyclableClassification.js");
 
 const app = express();
 let credentials, httpsServer;
