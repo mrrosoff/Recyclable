@@ -1,0 +1,46 @@
+import React from "react";
+
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import { red, orange, green, blue, purple } from '@material-ui/core/colors';
+
+import { SnackbarProvider, useSnackbar } from 'notistack';
+
+import Layout from "./Layout";
+
+const LoadApp = () => {
+
+    const { enqueueSnackbar } = useSnackbar();
+    const produceSnackBar = (message, variant) => enqueueSnackbar(message, { variant: variant });
+
+    return <Layout produceSnackBar={produceSnackBar} />;
+};
+
+const App = () => {
+
+    const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+
+    const theme = React.useMemo(
+        () =>
+            createMuiTheme({
+                palette: {
+                    primary: blue,
+                    secondary: green,
+                    type: prefersDarkMode ? 'dark' : 'light',
+                },
+            }),
+        [prefersDarkMode],
+    );
+
+    return(
+        <ThemeProvider theme={theme}>
+            <SnackbarProvider maxSnack={3} preventDuplicate>
+                <LoadApp/>
+            </SnackbarProvider>
+        </ThemeProvider>
+    );
+};
+
+
+
+export default App;
