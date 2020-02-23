@@ -7,9 +7,9 @@ const express = require('express');
 const app = express();
 
 // Certificate
-const privateKey = fs.readFileSync('/etc/letsencrypt/live/recyclable.tech/privkey.pem', 'utf8');
-const certificate = fs.readFileSync('/etc/letsencrypt/live/recyclable.tech/cert.pem', 'utf8');
-const ca = fs.readFileSync('/etc/letsencrypt/live/recyclable.tech/chain.pem', 'utf8');
+const privateKey = fs.readFileSync('/home/Ben/cert/privkey.pem', 'utf8');
+const certificate = fs.readFileSync('/home/Ben/cert/cert.pem', 'utf8');
+const ca = fs.readFileSync('/home/Ben/cert/chain.pem', 'utf8');
 
 const credentials = {
 	key: privateKey,
@@ -17,17 +17,15 @@ const credentials = {
 	ca: ca
 };
 
-app.use((req, res) => {
-	res.send('Hello there !');
-});
-
 // Starting both http & https servers
 const httpServer = http.createServer(app);
 const httpsServer = https.createServer(credentials, app);
 
-// set up a route to redirect http to https
-httpServer.get('*', function(req, res) {
-	res.redirect('https://' + req.headers.host + req.url);
+app.use((req, res) => {
+	if (!req.secure) {
+		res.redirect('https://' + req.headers.host + req.url);
+	}
+	res.send('Yay Recyclable!');
 });
 
 httpServer.listen(8080, () => {
