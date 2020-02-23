@@ -3,8 +3,7 @@ import React from "react";
 import CircularProgress from '@material-ui/core/CircularProgress';
 
 const DetailsPage = (props) => {
-    const name = ""; // "Coca-Cola can"
-    const recyclable = null; // true
+    const {objectDetails: {name, recyclable}} = props;
 
     const message = "Not sure if it's recyclable";
     if (typeof(recyclable) == "boolean")

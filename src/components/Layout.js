@@ -16,6 +16,7 @@ const CameraPage = (props) => {
         setPicUri(dataUri);
         new Promise(() => {sendServerRequestWithBody("getProductType", {"dataUri": dataUri})}).then(response => {
             console.log("response");
+            // props.setObjectDetails(...);
         });
     }
     const handleTakePhotoAnimationDone = (dataUri) => {
@@ -31,13 +32,14 @@ const Layout = props => {
 
     const [picUri, setPicUri] = useState('');
     const [page, setPage] = useState(0);
+    const [objectDetails, setObjectDetails] = useState({'name': '', 'recyclable': null});
 
     return(
         <Container>
             <div style={{minHeight: "90vh"}}>
                     {page ?
-                        <DetailsPage dataUri={picUri}/>
-                        : <CameraPage setPicUri={setPicUri} setPage={setPage} />
+                        <DetailsPage dataUri={picUri} objectDetails={objectDetails} />
+                        : <CameraPage setPicUri={setPicUri} setPage={setPage} setObjectDetails={setObjectDetails} />
                     }
             </div>
             <div style={{minHeight: "10vh"}}>
