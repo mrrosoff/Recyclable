@@ -28,6 +28,8 @@ To run it, you'll probably need `nvm` and `npm` and other delicious commands sta
 
 We made these design choices for a few reasons: since the project is a web app, it is platform independent and much easier to maintain. The Google Cloud Platform tools are easy to configure and scale, as make it easy to expand the training dataset.
 
+**Our Google Cloud Backend has been taken down at this time.**
+
 ## Scaling
 
 Recyclable is quite scalable: recycling capabilities are easily acquired or entered for any city, and the machine learning dataset can be improved upon to include products from all localities while also improving accuracy.
