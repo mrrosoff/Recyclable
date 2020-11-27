@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47c35639-2546-4dd6-9ccd-0a908333eb8a" name="Default Changelist" comment="Image!">
-      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/DEV.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/getCurrentLocation.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/api/getCurrentLocation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/restfulAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/api/restfulAPI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CameraComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/CameraComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/Navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/DetailsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/pages/DetailsPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/NoInfoPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/pages/NoInfoPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/client/static/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/resizeImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/utils/resizeImage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/windowDimensions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/utils/windowDimensions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Start.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +79,7 @@
       <updated>1582427981881</updated>
       <workItem from="1582427983963" duration="4566000" />
       <workItem from="1582478830169" duration="4621000" />
-      <workItem from="1606514530966" duration="295000" />
+      <workItem from="1606514530966" duration="321000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1582428951783</created>
@@ -330,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582481844334</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Update To Modern Spec">
+      <created>1606514842679</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1606514842679</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,16 +338,21 @@
     <MESSAGE value="No Info Page" />
     <MESSAGE value="Stuff" />
     <MESSAGE value="Image!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Image!" />
+    <MESSAGE value="Update To Modern Spec" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update To Modern Spec" />
   </component>
   <component name="WindowStateProjectService">
     <state x="946" y="528" width="1415" height="1078" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606514824692">
       <screen x="10" y="55" width="2980" height="1935" />
     </state>
     <state x="946" y="528" width="1415" height="1078" key="#com.intellij.execution.impl.EditConfigurationsDialog/10.55.2980.1935@10.55.2980.1935" timestamp="1606514824692" />
-    <state x="462" y="282" width="2066" height="1493" key="CommitChangelistDialog2" timestamp="1606514795377">
+    <state x="462" y="282" width="2066" height="1493" key="CommitChangelistDialog2" timestamp="1606514842536">
       <screen x="10" y="55" width="2980" height="1935" />
     </state>
-    <state x="462" y="282" width="2066" height="1493" key="CommitChangelistDialog2/10.55.2980.1935@10.55.2980.1935" timestamp="1606514795377" />
+    <state x="462" y="282" width="2066" height="1493" key="CommitChangelistDialog2/10.55.2980.1935@10.55.2980.1935" timestamp="1606514842536" />
+    <state x="795" y="571" width="1400" height="914" key="Vcs.Push.Dialog.v2" timestamp="1606514845316">
+      <screen x="10" y="55" width="2980" height="1935" />
+    </state>
+    <state x="795" y="571" width="1400" height="914" key="Vcs.Push.Dialog.v2/10.55.2980.1935@10.55.2980.1935" timestamp="1606514845316" />
   </component>
 </project>
