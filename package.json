@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "devServer": "nodemon server/index.js",
-    "devClient": "webpack-dev-server --mode development --devtool inline-source-map",
-    "dev": "concurrently --kill-others-on-fail \"npm run devClient\" \"npm run devServer\"",
-    "prod": "webpack --mode production && node server/index.js"
+    "devClient": "webpack-dev-server -d",
+    "start": "concurrently --kill-others-on-fail \"npm run devClient\" \"npm run devServer\"",
+    "build": "webpack -p && node server/index.js"
   },
   "keywords": [],
   "author": "Ben Gillett, David Hallstrom, Max Rosoff",

@@ -36,9 +36,9 @@ const resizeImage = (uri, maxDim, callback) => {
                 callback(canvas.toDataURL());
             }
 
-            sourceImage.src = uri;
+            sourceImage.client = uri;
         }
-        memoryImg.src = contents;
+        memoryImg.client = contents;
 
     }*/
 };

@@ -1,4 +1,13 @@
-/node_modules
-/dist
+# Node Files
+
+package-lock.json
+node_modules
+
+# Idea Files
 
 .idea/workspace.xml
+
+# Build Files
+
+dist
+build
