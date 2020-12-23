@@ -6,7 +6,7 @@
 
 ![recyclable.png](./recyclable.png)
 
-[Our Live Deploy](https://recyclable.tech) (While live, our Google Cloud Backend has been taken down becuase we are poor).
+[Our Live Deploy](https://recyclable.tech) (While live, our Google Cloud Backend has been taken down because we are poor).
 
 
 ## What is it?
