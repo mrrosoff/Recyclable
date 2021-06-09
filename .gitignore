@@ -1,13 +1,36 @@
+# IDE Files
+
+.idea
+.vscode
+
+# MacOS Files
+
+.DS_Store
+
 # Node Files
 
-package-lock.json
 node_modules
 
-# Idea Files
+# Python files
 
-.idea/workspace.xml
+/venv
+/env
+__pycache__
 
-# Build Files
+# Output Files
 
-dist
 build
+coverage
+dist
+lib
+out
+
+# Server Files
+
+.env
+dependency-reduced-pom.xml
+target
+
+# Test Files
+
+.nyc_output
